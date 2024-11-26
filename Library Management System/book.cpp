@@ -23,7 +23,7 @@ void Book::displayBookDetails() const {
 // Method to borrow the book
 bool Book::borrowBook() {
     if (availability) {
-        availability = true;
+        availability = false;
         std::cout << "The book has been borrowed successfully.\n";
         return true;
     }
